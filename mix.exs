@@ -4,8 +4,8 @@ defmodule ABI.Mixfile do
   def project do
     [
       app: :abi,
-      version: "0.1.13",
-      elixir: "~> 1.7",
+      version: "0.2.0",
+      elixir: "~> 1.14",
       description: "Ethereum's ABI Interface",
       package: [
         maintainers: ["Geoffrey Hayes", "Mason Fischer"],
@@ -32,7 +32,7 @@ defmodule ABI.Mixfile do
       {:ex_doc, "~> 0.19", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0.0-rc.4", only: [:dev, :test], runtime: false},
       {:jason, "~>  1.1"},
-      {:keccakf1600, "~> 2.0.0", hex: :keccakf1600_orig}
+      {:keccakf1600, "~> 2.1", hex: :keccakf1600_diode_fork}
     ]
   end
 end
